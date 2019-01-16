@@ -12,6 +12,11 @@ setup(
     keywords=["attrs"],
     packages=find_packages(),
     include_package_data=True,
+    install_requires=[
+        'attrs>=18.2.0',
+        'python-dateutil>=2.7.5',
+        'pytz>=2018.9',
+    ],
     setup_requires=['pytest-runner'],
     tests_require=[
         'hypothesis>=4.0.1',
