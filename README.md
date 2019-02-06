@@ -1,6 +1,8 @@
 AttrKid
 =======
 
+![build status](https://travis-ci.org/danfairs/AttrKid.svg?branch=master)
+
 Welcome to AttrKid!
 
 AttrKid allows you to build nested, typed `attrs` classes, with support for serialising deserialising to dictionaries and lists, validating on the way. From there it's a simple hop to JSON.
