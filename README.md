@@ -11,7 +11,7 @@ It's built on the excellent [attrs](https://github.com/python-attrs/attrs) libra
 
 Here's what it looks like:
 
-```
+```python
 import attr
 from attrkid import from_dict, to_dict
 from attrkid.fields import object_field, string_field
@@ -56,7 +56,7 @@ There are lots of fields available out-of-the-box:
 
 It can also handle unions of types, round-tripped through dictionaries:
 
-```
+```python
 from attrkid import to_dict, from_dict
 from attrkid.fields import (
     bool_field,
@@ -91,7 +91,7 @@ class Container:
 
 In that previous example, you might notice that the `items` element in the serialised dict is a little superflous, since it's the only field. You can tell AttrKid to use a more compact serialisation in that case:
 
-```
+```python
 @attr.s
 class Value:
     value = string_field()
@@ -114,7 +114,7 @@ class And:
 
 You can also specify class names as strings, to help you out of dependency knots:
 
-```
+```python
 from attrkid.kinds import DeferredKind
 
 @attr.s
